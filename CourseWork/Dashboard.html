@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<script runat="server">
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs)
+
+    End Sub
+</script>
+
+<html lang="en">
+<head>
+    <title> Staff Details</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" href="css/matrix-style.css" />
+    <link rel="stylesheet" href="css/matrix-media.css" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery.gritter.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="header">
+        <h1><a href="Dashboard.aspx">Tours & Travel</a></h1>
+    </div>
+    <div id="sidebar">
+        <a href="Dashboard.aspx" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+        <ul>
+            <li class="submenu active">
+                  <a href="Dashboard.aspx"><i class="icon icon-home"></i> <span>Dashboard</span></a> 
+                  <a href=""Dashboard.aspx"><i class="icon icon-home"></i> <span>Dashboard</span> <span class="label label-important">5</span></a>
+            </li>
+                
+            <li class="submenu">
+                <a href="#"><i class="icon icon-th-list"></i> <span>Simple Forms</span> <span class="label label-important">5</span></a>
+                <ul>
+                    <li><a href="Staff.aspx">Staff Details</a></li>
+                    <li><a href="Designation.aspx">Designation Details</a></li>
+                    <li><a href="Customer.aspx">Customer Details</a></li>
+                    <li><a href="Packages.aspx">Package Details</a></li>
+                    <li><a href="Tour Guide.aspx">Tour Guide Details</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#"><i class="icon icon-info-sign"></i> <span>Complex Forms</span> <span class="label label-important">3</span></a>
+                <ul>
+                    <li><a href="Customer-Schedule.aspx">Customer-Package Schedule</a></li>
+                    <li><a href="Staff-Role-Mapping.aspx">Staff-Role Mapping Form</a></li>
+                    <li><a href="Package-Activity.aspx">Package-Activity Schedule</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <!--breadcrumbs-->
+        <div id="content-header">
+            <div id="breadcrumb">
+                <a href="Dashboard.aspx" title="Go to Dashboard" class="tip-bottom"><i class="icon-home"></i>Dashboard</a>
+            </div>
+        </div>
+        <!--End-breadcrumbs-->
+        <!--Action boxes-->
+        <div class="container-fluid">
+            <div class="quick-actions_homepage">
+                <ul class="quick-actions">
+                    <li class="bg_lb"> <a href="Dashboard.aspx"> <i class="icon-dashboard"></i> My Dashboard </a> </li>
+                    <li class="bg_lr"> <a href="Staff.aspx"> <i class="icon-info-sign"></i> Staff </a> </li>
+                    <li class="bg_lo"> <a href="Customer.aspx"> <i class="icon-info-sign"></i> Customer </a> </li>
+                    <li class="bg_lb"> <a href="Designation.aspx"> <i class="icon-info-sign"></i> Designation </a> </li>
+                    <li class="bg_lg"> <a href="Packages.aspx"> <i class="icon-info-sign"></i> Packages </a> </li>
+                    <li class="bg_ly"> <a href="Tour Guide.aspx"> <i class="icon-info-sign"></i> Guides </a> </li>
+
+                    <li class="bg_lg span3"> <a href="Package-Activity.aspx"> <i class="icon-signal"></i> Package Activity Details</a> </li>
+                    <li class="bg_lo span3"> <a href="Staff-Role-Mapping.aspx"> <i class="icon-th-list"></i> Staff-Role mappings</a> </li>
+                    <li class="bg_lg span3"> <a href="Customer-Schedule.aspx"> <i class="icon-signal"></i> Customer-Schedule Details</a> </li>
+                </ul>
+            </div>
+            <!--End-Action boxes-->
+            <!--Form-->
+            <!--End-Form-->
+        </div>
+    </div>
+
+    <!--end-main-container-part-->
+    <!--Footer-part-->
+
+    <div class="row-fluid">
+        <div id="footer" class="span12"> 2020 &copy; Rajat Shrestha. Brought to you by <a href="https://shrestharajat.github.io/">shrestharajat.github.io</a> </div>
+    </div>
+
+    <!--end-Footer-part-->
+
+    <script src="js/excanvas.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.ui.custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flot.min.js"></script>
+    <script src="js/jquery.flot.resize.min.js"></script>
+    <script src="js/jquery.peity.min.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/matrix.dashboard.js"></script>
+    <script src="js/jquery.gritter.min.js"></script>
+    <script src="js/matrix.interface.js"></script>
+    <script src="js/matrix.chat.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/matrix.form_validation.js"></script>
+    <script src="js/jquery.wizard.js"></script>
+    <script src="js/jquery.uniform.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/matrix.popover.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/matrix.tables.js"></script>
+
+    <script type="text/javascript">
+        // This function is called from the pop-up menus to transfer to
+        // a different page. Ignore if the value returned is a null string:
+        function goPage(newURL) {
+
+            // if url is empty, skip the menu dividers and reset the menu selection to default
+            if (newURL != "") {
+
+                // if url is "-", it is this page -- reset the menu:
+                if (newURL == "-") {
+                    resetMenu();
+                }
+                // else, send page to designated URL
+                else {
+                    document.location.href = newURL;
+                }
+            }
+        }
+
+        // resets the menu selection upon entry to this page:
+        function resetMenu() {
+            document.gomenu.selector.selectedIndex = 2;
+        }
+    </script>
+    <p>
+        &nbsp;
+    </p>
+    <p>
+        &nbsp;
+    </p>
+</body>
+</html>
+
+
