@@ -1,6 +1,10 @@
 # Travel-Company-DB
 A simple Travel company DB with admin panel using C# and Oracle Database
 
+> [Requirement Specification](https://github.com/ShresthaRajat/Travel-Company-DB/blob/master/AD%20ORACLE%20CW1%20Requirements.pdf)
+> [Documentation](https://github.com/ShresthaRajat/Travel-Company-DB/blob/master/17030954%20Rajat%20Shrestha.pdf)
+> [Oracle Docker](https://github.com/ShresthaRajat/Travel-Company-DB/blob/master/Oracle_Docker.md)
+
 
 ## Requirements:
 ### Essential:
@@ -20,10 +24,3 @@ A simple Travel company DB with admin panel using C# and Oracle Database
 3.  Install SQL Developer and link it with the database
 4.  Install Visual Studio and open the sln file
 5.  Run the program
-
-
-Note:  (can also use docker container) 
-
-
-## Remaining Work:
-
